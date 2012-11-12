@@ -1,7 +1,26 @@
-call pathogen#infect()
-colorscheme pyte
+" pathogen
+let g:pathogen_disabled = [ 'pathogen' ]    " don't load self 
+call pathogen#infect()                      " load everyhting else
+call pathogen#helptags()                    " load plugin help files
 syntax enable
 filetype plugin indent on
+
+" colorpack
+colorscheme vibrantink
+
+" gundo
+nnoremap <F5> :GundoToggle<CR>
+
+" lusty
+set hidden
+
+" pep8
+let g:pep8_map='<leader>8'
+
+" supertab
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+set completeopt=menuone,longest,preview
 
 set hls
 set nobackup
