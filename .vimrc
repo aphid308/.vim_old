@@ -6,7 +6,7 @@ syntax enable
 filetype plugin indent on
 
 " colorpack
-colorscheme vibrantink
+colorscheme slate
 
 " gundo
 nnoremap <F5> :GundoToggle<CR>
